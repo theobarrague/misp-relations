@@ -10,14 +10,34 @@
         "stix-2.0",
         "alfred"
       ],
-      "name": "derived-from"
+      "name": "derived-from",
+      "opposite": "derives"
+    },
+    {
+      "description": "The information in the target object is based on information from the source object.",
+      "format": [
+        "misp",
+        "stix-2.0",
+        "alfred"
+      ],
+      "name": "derives",
+      "opposite": "derived-from"
     },
     {
       "description": "This relationship describes an object which executes another object",
       "format": [
         "misp"
       ],
-      "name": "executes"
+      "name": "executes",
+      "opposite": "executed-by"
+    },
+    {
+      "description": "This relationship describes an object which executed another object",
+      "format": [
+        "misp"
+      ],
+      "name": "executed-by",
+      "opposite": "executes"
     },
     {
       "description": "The referenced source and target objects are semantically duplicates of each other.",
@@ -43,7 +63,8 @@
         "misp",
         "stix-1.1"
       ],
-      "name": "connected-to"
+      "name": "connected-to",
+      "opposite": "connected-from"
     },
     {
       "description": "The referenced source is connected from the target object.",
@@ -51,7 +72,8 @@
         "misp",
         "stix-1.1"
       ],
-      "name": "connected-from"
+      "name": "connected-from",
+      "opposite": "connected-to"
     },
     {
       "description": "The referenced source is containing the target object.",
@@ -60,7 +82,8 @@
         "stix-1.1",
         "alfred"
       ],
-      "name": "contains"
+      "name": "contains",
+      "opposite": "contained-by"
     },
     {
       "description": "The referenced source is contained by the target object.",
@@ -68,7 +91,8 @@
         "misp",
         "stix-1.1"
       ],
-      "name": "contained-by"
+      "name": "contained-by",
+      "opposite": "contains"
     },
     {
       "description": "The referenced source is contained within the target object.",
@@ -84,7 +108,8 @@
         "misp",
         "stix-1.1"
       ],
-      "name": "characterized-by"
+      "name": "characterized-by",
+      "opposite": "characterizes"
     },
     {
       "description": "The referenced source is characterizing the target object.",
@@ -92,7 +117,8 @@
         "misp",
         "stix-1.1"
       ],
-      "name": "characterizes"
+      "name": "characterizes",
+      "opposite": "characterized-by"
     },
     {
       "description": "The referenced source has queried the target object.",
@@ -100,7 +126,8 @@
         "misp",
         "stix-1.1"
       ],
-      "name": "properties-queried"
+      "name": "properties-queried",
+      "opposite": "properties-queried-by"
     },
     {
       "description": "The referenced source is queried by the target object.",
@@ -108,7 +135,8 @@
         "misp",
         "stix-1.1"
       ],
-      "name": "properties-queried-by"
+      "name": "properties-queried-by",
+      "opposite": "properties-queried"
     },
     {
       "description": "The referenced source is extracted from the target object.",
